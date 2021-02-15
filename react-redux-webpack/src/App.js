@@ -7,10 +7,12 @@ const AppContainer = styled.div`
   margin: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   color: #222222;
-  background: #fafafa;
+  background: ${(props) => props.theme.colors.veryLightGrey};
 `;
 
-document.body.style.backgroundColor = "#FAFAFA";
+document.body.style.backgroundColor = "#FAFAFA"; // Check right way to do this.
+
+console.log(window);
 
 const App = () => (
   <AppContainer>

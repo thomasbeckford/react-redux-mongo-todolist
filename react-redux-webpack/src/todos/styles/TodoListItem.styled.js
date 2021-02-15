@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TodoItemContainer = styled.div`
-  background: #fff;
+  background: ${(props) => props.theme.colors.white};
   border-radius: 8px;
   margin-top: 8px;
   padding: 16px;
@@ -36,12 +36,12 @@ export const Button = styled.button`
 `;
 
 export const CompletedButton = styled(Button)`
-  background-color: #22ee22;
+  background-color: ${(props) => props.theme.colors.green};
   color: white;
 `;
 
 export const RemoveButton = styled(Button)`
-  background-color: #ee2222;
+  background-color: ${(props) => props.theme.colors.red};
   margin-left: 8px;
   color: white;
 `;
