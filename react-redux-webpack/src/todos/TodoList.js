@@ -36,7 +36,7 @@ const TodoList = ({
   const content = (
     <ListWrapper>
       <NewTodoForm />
-      <h3>Incompleted:</h3>
+      {incompleteTodos.length ? <h3>Incompleted:</h3> : null}
       {incompleteTodos.map((todo) => (
         <TodoListItem
           key={todo._id}
@@ -45,7 +45,7 @@ const TodoList = ({
           onCompletedPressed={onCompletedPressed}
         />
       ))}
-      <h3>Completed:</h3>
+      {completedTodos.length ? <h3>Completed:</h3> : null}
       {completedTodos.map((todo) => (
         <TodoListItem
           key={todo._id}

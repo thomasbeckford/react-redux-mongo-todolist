@@ -9,12 +9,15 @@ export const FormContainer = styled.div`
 
 export const NewTodoInput = styled.input`
   font-size: 16px;
-  padding: 8px;
+  height: 40px;
   border: none;
   border-bottom: 2px solid #ddd;
   border-radius: 8px;
-  width: 70%;
   outline: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
 `;
 
 export const NewTodoButton = styled.button`
@@ -24,8 +27,20 @@ export const NewTodoButton = styled.button`
   border-radius: 8px;
   outline: none;
   cursor: pointer;
-  margin-left: 8px;
-  width: 20%;
   background-color: #22ee22;
   color: white;
+  display: block;
+  width: 100%;
+`;
+
+export const ErrorMessage = styled.p`
+  font-size: 13px;
+  color: red;
+  border: 1px solid red;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 3px;
+  border-radius: 4px;
+  background-color: #ffcccc;
 `;

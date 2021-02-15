@@ -5,7 +5,7 @@ import {
   CompletedButton,
   RemoveButton,
   TodoItemContainerWithWarning,
-} from "./TodoListItem.styled";
+} from "./styles/TodoListItem.styled";
 
 const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => {
   const Container = todo.isCompleted
