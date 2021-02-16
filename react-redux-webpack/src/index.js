@@ -15,6 +15,7 @@ ReactDOM.render(
   <ThemeProvider theme={theme}>
     <Provider store={store}>
       <PersistGate loading={<div>Loading...</div>} persistor={persistor}>
+        {console.log(persistor)}
         <App />
       </PersistGate>
     </Provider>
