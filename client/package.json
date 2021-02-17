@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "npx webpack serve --mode development",
     "test": "mocha \"src/**/*.test.js\" --require @babel/register --recursive",
-    "build": "npx webpack --mode development"
+    "build": "npx webpack --mode production",
+    "build-prod": "npx webpack --mode production --config webpack.config.production.js --progress",
+    "rsync": "rsync -arvz --progress public/* root@66.97.32.193:/var/platform/www/todoList/",
+    "deploy": "yarn build-prod && yarn rsync "
   },
   "keywords": [],
   "author": "",
